@@ -5,7 +5,7 @@ function App() {
 
   return(
     <>
-      <Button pad="5" color="bg-red-50"/>
+      <Button />
     </>
   );
 }

@@ -1,12 +1,29 @@
-function Button(props) {
+import React,{useState, useRef, useEffect} from "react";
 
-  const bgColor = props.color;
-  const padbtn = props.pad
-
-  const stl = ("bg-amber-200 px-" + padbtn + " py-2 rounded-xl hover:" + bgColor +" cursor-pointer");
+function Button() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <button className={stl}>click me</button>
+    <>
+      <div className="h-screen parent">
+        
+        <div className="drop-menu" ref={menuRef}>
+          <div onClick={()=> setIsOpen(!isOpen)} className="cursor-pointer">Media</div>
+          {isOpen && (
+          <div>
+            <ul className="drop-menu-options absolute">
+              <li>GitHub</li>
+              <li>LinkedIn</li>
+              <hr />
+              <li>Contact me</li>
+            </ul>
+          </div>
+          )}
+        </div>
+
+        
+      </div>
+    </>
   );
 }
 
