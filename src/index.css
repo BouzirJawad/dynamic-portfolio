@@ -1,20 +1,14 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
 
     html{
-        @apply font-mono ; 
-        /* background-image: url("./assets/bgbgbg.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.4); /* Adjust transparency *
-        background-blend-mode: multiply; */
+        @apply font-mono bg-gray-300 dark:bg-slate-900 text-black dark:text-white transition; 
     }
 
     *{
-        @apply mb-1;
+        @apply my-0.5;
     }
     
     button{
@@ -41,7 +35,7 @@
         @apply transition inline-block px-3 ml-2;
     }
     .drop-menu-options{
-        @apply border rounded-lg p-2 text-center px-3 bg-blue-50 translate-x-7;
+        @apply border rounded-lg p-2 text-center px-3 bg-blue-50 translate-x-7 dark:bg-slate-900;
     }
     .drop-menu-options li{
         @apply cursor-pointer;
