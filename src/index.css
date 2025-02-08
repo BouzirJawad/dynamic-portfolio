@@ -6,6 +6,10 @@
     html{
         @apply font-mono bg-gray-300 dark:bg-slate-900 text-black dark:text-white transition; 
     }
+    
+    .mainDiv{
+        @apply bg-gray-400 dark:bg-slate-600;
+    }
 
     *{
         @apply my-0.5;

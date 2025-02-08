@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
-import { Menu } from "./icons/Menu";
-import { Sun } from "./icons/Sun";
-import { Moon } from "./icons/Moon";
+import React, {useEffect, useState} from "react"
+import { Menu } from "./icons/Menu"
+import { Sun } from "./icons/Sun"
+import { Moon } from "./icons/Moon"
 
 function Header() {
     const [navOpen, setNavOpen] = useState(false);
@@ -23,18 +23,18 @@ function Header() {
     }, [darkMode]);
 
     return(
-        <header className="w-[95%] mx-auto rounded-xl bg-gray-400 dark:bg-slate-600">
+        <header className="w-[95%] sm:w-[75%] mx-auto rounded-xl mainDiv fixed top-2 left-0 right-0">
             <nav className="flex items-center p-4 flex-wrap">
-                    <div className="self-start pt-2 basis-1/2 lg:basis-1/6">
+                    <div className="self-start pt-2 basis-1/2 xl:basis-1/6">
                         JUUBUU's Portfolio
                     </div>
-                    <div className="ml-auto grow lg:grow-0 flex justify-end basis-1/2">
-                        <button onClick={()=> setNavOpen(!navOpen)} className="m-0 mr-2 text-3xl p-1 border block lg:hidden"><Menu className="my-0"/></button>
+                    <div className="ml-auto lg:grow-0 flex justify-end basis-1/2">
+                        <button onClick={()=> setNavOpen(!navOpen)} className="m-0 mr-2 text-3xl p-1 border block xl:hidden"><Menu className="my-0"/></button>
 
                         <button className="text-3xl p-0 m-0 lg:mr-2" onClick={() => setDarkMode(!darkMode)}>{ darkMode ? <Moon /> : <Sun />}</button>
                     </div>
-                    <div className={`lg:flex lg:items-center ${navOpen ? 'block' : 'hidden'}`}>
-                        <ul className="lg:flex lg:space-x-4 lg:items-center ml-auto mr-4">
+                    <div className={`xl:flex xl:items-center ${navOpen ? 'block' : 'hidden'}`}>
+                        <ul className="xl:flex xl:space-x-4 xl:items-center ml-3 xl:ml-auto mr-4">
                             <li>
                                 <a href="#" className="block mt-4 lg:inline-block lg:mt-0 hover:underline">Home</a>
                             </li>
@@ -44,7 +44,7 @@ function Header() {
                             <li>
                                 <a href="#" className="block mt-4 lg:inline-block lg:mt-0 hover:underline">Projects</a>
                             </li>
-                            <li>
+                            <li className="mt-1.5 xl:mt-0">
                                 <button className="primary-btn">Contact me</button>
                             </li>
                         </ul>
