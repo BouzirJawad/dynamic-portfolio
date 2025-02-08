@@ -3,7 +3,7 @@ import chillGuy from '../assets/95c.png'
 function Home() {
     
     return(
-        <section className="w-[95%] sm:w-[75%] md:w-[55%] mx-auto rounded-xl mainDiv">
+        <section className="w-[90%] sm:w-[75%] md:w-[55%] mx-auto rounded-xl mainDiv">
             <div className="w-full flex flex-wrap justify-center items-center p-3">
                 <div className="w-1/3 md:w-1/2 sm:max-w-sm">
                     <img src={chillGuy} alt="chill guy" />
