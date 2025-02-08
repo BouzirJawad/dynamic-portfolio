@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="grow mt-35">
+      <main className="grow mt-3">
         <Home />
         <About />
         <Projects />

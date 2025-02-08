@@ -1,6 +1,19 @@
+import React, { useEffect } from 'react'
+import Typed from 'typed.js'
 import chillGuy from '../assets/95c.png'
 
 function Home() {
+
+    useEffect(() => {
+        const options = {
+          strings: ['Bouzir Jawad', 'JUUBUU', 'Jawad Bouzir'],
+          typeSpeed: 60,
+          backSpeed: 30,
+          loop: true,
+        }
+        const typed = new Typed('.typing2', options)
+        return () => typed.destroy()
+      }, [])
     
     return(
         <section className="w-[90%] sm:w-[75%] md:w-[55%] mx-auto rounded-xl mainDiv">
@@ -10,9 +23,17 @@ function Home() {
                 </div>
                 <div className="w-2/3 sm:w-1/2 mt-3 lg:space-y-5 xl:space-y-7">
                     <p className="text-2xl font-bold">Hello,</p>
-                    <p className="text-xl font-bold">I'm Bouzir Jawad</p>
+                    <p className="text-xl font-bold">I'm <span className="typing2 text-blue-700 dark:text-amber-300"></span>,</p>
                     <p className="text-lg">full stack developer / freelancer</p>
-                    <button className="primary-btn mb-2 inline-block">Get in touch</button>
+                    <button className="primary-btn mb-2 inline-block"
+                    onClick={() => {
+                        const contactSection = document.getElementById('myContactMeSection')
+                        if (contactSection) {
+                          const offset = contactSection.offsetTop / 1.05
+                          window.scrollTo({ top: offset, behavior: 'smooth' })
+                        }
+                      }}
+                      >Get in touch</button>
                 </div>
             </div>
         </section>

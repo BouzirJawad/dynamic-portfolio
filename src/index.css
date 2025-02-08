@@ -23,7 +23,7 @@
     }
 
     .primary-btn{
-        @apply bg-blue-600 text-white;
+        @apply bg-blue-600 font-bold text-[15px] text-white dark:text-black dark:bg-amber-300;
     }
 
     input{

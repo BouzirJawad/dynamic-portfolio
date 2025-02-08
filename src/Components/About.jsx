@@ -1,7 +1,7 @@
 
 function About() {
     return(
-        <section className="w-[90%] md:w-[70%] mx-auto text-center ">
+        <section id="myAboutMeSection" className="w-[90%] md:w-[70%] mx-auto text-center ">
             <p className="text-center text-2xl sm:text-4xl font-bold sm:py-6 py-3">About me</p>
             <div className="mainDiv rounded-xl transition sm:hover:scale-105">
                 <div className="p-3 hover:font-bold text-sm md:text-xl sm:mx-10 lg:mx-25 md:py-7">

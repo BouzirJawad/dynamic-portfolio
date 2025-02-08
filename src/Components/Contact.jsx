@@ -27,7 +27,7 @@ function Contact() {
   }
 
   return (
-    <section className="mx-auto w-[95%] sm:w-[80%] md:w-[60%]">
+    <section id="myContactMeSection" className="mx-auto w-[95%] sm:w-[80%] md:w-[60%]">
         <p className="text-center text-2xl sm:text-4xl font-bold sm:py-6 py-3">Contact me</p>
         <div className="mainDiv rounded-xl flex justify-center flex-wrap sm:flex-nowrap">
             <div className="sm:w-2/3">
@@ -47,7 +47,7 @@ function Contact() {
                             className="border p-2 rounded w-full"
                         />
                         {validated && !formData.firstName && (
-                            <div className="text-red-500 text-sm mt-1">
+                            <div className="text-red-500 dark:text-orange-400 text-sm mt-1">
                             Please enter your first name.
                             </div>
                         )}
@@ -70,7 +70,7 @@ function Contact() {
                             className="border p-2 rounded w-full"
                         />
                         {validated && !formData.lastName && (
-                            <div className="text-red-500 text-sm mt-1">
+                            <div className="text-red-500 dark:text-orange-400 text-sm mt-1">
                             Please enter your last name.
                             </div>
                         )}
@@ -94,7 +94,7 @@ function Contact() {
                       className="border p-2 rounded w-full"
                     />
                     {validated && !formData.email && (
-                      <div className="text-red-500 text-sm mt-1">
+                      <div className="text-red-500 dark:text-orange-400 text-sm mt-1">
                         Please enter a valid email address.
                       </div>
                     )}
@@ -114,7 +114,7 @@ function Contact() {
                       className="border p-2 rounded w-full"
                     ></textarea>
                     {validated && !formData.message && (
-                      <div className="text-red-500 text-sm mt-1">
+                      <div className="text-red-500 dark:text-orange-400 text-sm mt-1">
                         Please enter your message.
                       </div>
                     )}
