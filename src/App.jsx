@@ -1,5 +1,6 @@
 import Header from "./Components/Header"
 import Home from "./Components/Home"
+import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer"
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <main className="grow mt-35">
         <Home />
+        <About />
         <Projects />
       </main>
       <Footer />
