@@ -23,7 +23,7 @@ function Header() {
     }, [darkMode]);
 
     return(
-        <header className="w-[95%] sm:w-[75%] mx-auto rounded-xl mainDiv fixed top-2 left-0 right-0">
+        <header className="w-[95%] sm:w-[75%] mx-auto rounded-xl mainDiv fixed top-2 left-0 right-0 z-40">
             <nav className="flex items-center p-4 flex-wrap">
                     <div className="self-start pt-2 basis-1/2 xl:basis-1/6">
                         JUUBUU's Portfolio

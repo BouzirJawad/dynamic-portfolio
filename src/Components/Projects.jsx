@@ -27,11 +27,10 @@ function Projects() {
                     <Card img={startUp} 
                         alt="startUp picture" 
                         title="StartUp website" 
-                        desc="a website application that showcase my group members skills/services."
-                        className="sm:hover:scale-100"/>
+                        desc="a website application that showcase my group members skills/services." />
                 </div>
 
-                <div className={`transition-all duration-700 sm:hover:scale-105 rounded-xl ease-out overflow-hidden ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className={`h-max transition-all duration-700 sm:hover:scale-105 rounded-xl ease-out overflow-hidden ${isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"}`}>
                     <Card img={weather} 
                         alt="Weather app picture" 
                         title="Weather app website" 

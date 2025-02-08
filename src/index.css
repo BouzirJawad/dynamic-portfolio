@@ -27,12 +27,7 @@
     }
 
     input{
-        @apply px-1.5 py-1 outline-none border border-slate-300 rounded-sm font-bold text-slate-600
-        disabled:bg-slate-400/30;
-    }
-
-    input[type="text"]{
-        @apply  placeholder:italic placeholder:font-light;
+        @apply px-1.5 py-1 outline-none border rounded-sm font-bold placeholder:italic placeholder:font-light;
     }
 
     .drop-menu{
