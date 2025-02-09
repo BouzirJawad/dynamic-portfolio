@@ -4,7 +4,7 @@ import blog from '../assets/blog.png'
 import startUp from '../assets/startUp.png'
 import weather from '../assets/weather.png'
 
-import React,{useState, useEffect} from "react";
+import React,{useState} from "react";
 
 function Projects() {
 
@@ -42,7 +42,7 @@ function Projects() {
                 </div>
             </div>
             <div className="w-[60%] md:w-full flex flex-col md:flex-row md:justify-center mx-auto md:gap-5 md:py-3">
-                <button onClick={()=> setIsOpen(!isOpen)} className="primary-btn">View more</button>
+                <button onClick={()=> setIsOpen(!isOpen)} className="primary-btn">{isOpen ? "View less" : "View more"}</button>
                 <a href="https://github.com/BouzirJawad?tab=repositories" target="_blank">
                     <button className="border-2">View more in Github</button>
                 </a>
